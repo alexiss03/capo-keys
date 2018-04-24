@@ -5,26 +5,26 @@ import {
 
 
 const INITIAL_STATE = {
-  selectKeyIndex: 0,
+  selectedKeyIndex: 0,
   selectedCapo: 7
-}
+};
 
 
-export default { state = INITIAL_STATE, action } => {
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SELECT_KEY_INDEX: {
       return {
         ...state,
-        selectKeyIndex: action.payload
-      }
-
+        selectedKeyIndex: action.payload
+      };
     }
-    case: SELECT_CAPO: {
+    case SELECT_CAPO: {
       return {
         ...state,
         selectedCapo: action.payload
-      }
+      };
     }
-    default: return
+    default:
+    return state;
   }
-}
+};

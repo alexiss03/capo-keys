@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View, Platform, Image } from 'react-native';
 import Expo from 'expo';
-import KeysButtons from '../components/KeysButtons'
+import KeysButtons from '../components/KeysButtons';
+import CapoButtons from '../components/CapoButtons';
 import { STATUS_BAR_HEIGHT } from '../constants';
 import icon from '../assets/icons/pure-icon.png';
 
@@ -48,6 +49,7 @@ class MainScreen extends Component {
     return (
       <View style={{ flex: 1, backgroundColor: '#ddd' }}>
         <KeysButtons />
+        <CapoButtons />
         {/* Chord Modal */}
 
         {/* Content */}
